@@ -19,3 +19,10 @@ p{
     width: 80%;
     margin: auto;
 }
+.block{
+    float: left;
+    width: 33.3%; 
+    padding: 5px;
+    border: 1px solid #227892;
+    box-sizing: border-box;
+}
