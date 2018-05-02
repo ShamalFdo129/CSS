@@ -25,4 +25,24 @@ p{
     padding: 5px;
     border: 1px solid #227892;
     box-sizing: border-box;
+    margin-bottom:1em; 
+}
+.clr{
+    clear: both;
+    margin-top: 1em;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px,auto);
+}
+
+.wrapper > div{
+    background: #eee;
+    padding: 1em;
+}
+
+.wrapper >div:nth-child(odd){
+    background: #ddd;
 }
