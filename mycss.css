@@ -35,7 +35,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 1em;
-    grid-auto-rows: minmax(100px,auto);
+    grid-auto-rows: minmax(100px,auto);  /*row height defining using minmax function*/
 }
 
 .wrapper > div{
@@ -45,4 +45,31 @@ p{
 
 .wrapper >div:nth-child(odd){
     background: #ddd;
+}
+
+/* FlexBox */
+
+.wrapper-1{
+    display: flex;
+
+}
+
+.wrapper-1 div{
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.box-2{
+ flex: 1;
+ order: 3;
+}
+
+.box-3{
+    flex: 2;
+    order: 2;
+}
+
+.box-4{
+    flex: 1;
+    order: 1;
 }
